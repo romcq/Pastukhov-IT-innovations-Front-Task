@@ -1,0 +1,272 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.header {
+	background-color: #4db8ff;
+    padding: 50px 0;
+	color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-logo, .header-content {
+    flex: 1;
+}
+
+.header-logo img {
+    max-width: 150px;
+}
+
+.header-content {
+    max-width: 550px;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.header-image img {
+    max-width: 350px;
+}
+
+.middle-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.middle-section h2 {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.block {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.block img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.block h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 14px;
+}
+
+.callback-form-section {
+    padding: 50px 0;
+    background-color: #e5e9ec;
+    text-align: center;
+}
+
+.callback-form-section h2 {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.callback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.callback-form .form-group {
+    margin-bottom: 20px;
+}
+
+.callback-form input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.callback-form button {
+    width: 50%;
+	background-color: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+}
+
+.footer-section {
+    background-color: #0061c3;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scale-in {
+    animation: scaleIn 1.5s ease-out;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate__slow {
+    --animate-duration: 4s;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        padding: 20px 0;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .header-content h1 {
+        font-size: 24px;
+    }
+    .blocks-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    .header {
+        padding: 30px 0;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+    .header {
+        padding: 50px 0;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.order-form-section {
+    padding: 50px 0;
+    background-color: #e5e9ec;
+    text-align: center;
+}
+
+.order-form-section h2 {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.order-form .form-group {
+    margin-bottom: 20px;
+}
+
+.order-form input,
+.order-form select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.order-form button {
+    width: 50%;
+	background-color: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+}
