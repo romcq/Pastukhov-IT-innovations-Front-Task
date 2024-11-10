@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">       
+            <div class="header-content">
+                <div class="header-logo slide-in-left">
+                    <img src="img/logo.png" alt="Phone Image">
+                </div><br><br>
+                <h1 class="animate__animated animate__bounce">С помощью нас<br>
+                    вы сможете создать то, о чем<br>
+                    <span>желаете!</span></h1>
+                <p class="scale-in">Наши способности + опыт помогут Вам достичь <br>огромного успеха. Мы верим в вас И знаем это на<br>все 100%, Вас не остановить!</p>
+                <button class="btn-primary">Узнать больше...</button>
+            </div>
+            <div class="header-image ">
+                <img src="img/header-img.png" alt="Phone Image" class="animate__animated animate__fadeIn animate__slow">
+            </div>     
+        </div>
+    </header>
+    <section class="middle-section">
+        <h2>Что Вам необходимо?</h2>
+        <div class="blocks-container">
+            <div class="block">
+                <img src="img/f3.png" alt="Первый блок">
+                <h3>Первый блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="block">
+                <img src="img/f4.png" alt="Второй блок">
+                <h3>Второй блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="block">
+                <img src="img/f5.png" alt="Третий блок">
+                <h3>Третий блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <section class="order-form-section">
+        <h2>Форма заказа продукта</h2>
+        <form class="order-form" id="orderForm">
+            <div class="form-group">
+                <input type="text" id="orderName" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="orderEmail" placeholder="Введите свой E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="orderPhone" placeholder="Телефон" pattern="^\+?[0-9]{10,15}$" required>
+            </div>
+            <div class="form-group">
+                <select id="orderProduct" required>
+                    <option value="" disabled selected>Выберите продукт</option>
+                    <option value="Product1">Продукт 1</option>
+                    <option value="Product2">Продукт 2</option>
+                    <option value="Product3">Продукт 3</option>
+                </select>
+            </div>
+            <button type="button" class="btn-primary" onclick="validateOrderForm()">Отправить заказ</button>
+        </form>
+        <div id="orderResult" style="color: green;"></div>
+    </section>
+    <section class="callback-form-section">
+        <h2>Форма заказа обратного звонка</h2>
+        <form class="callback-form" id="callbackForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Введите свой E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Телефон" pattern="^\+?[0-9]{10,15}$" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="Какая тема Вас интересует?" required>
+            </div>
+            <button type="submit" class="btn-primary">Отправить вопрос!</button>
+        </form>
+        <div id="errorMessages" style="color: red;"></div>
+    </section>    
+    <footer class="footer-section">
+        <p>@ Все на этом сайте защищено</p>
+    </footer>
+    
+</body>
+</html>
